@@ -1,0 +1,43 @@
+### Continuação do Modelo de Caixas na prática (parte 2)
+
+Essa aula (parte 2) aprofunda o Box Model, resolvendo problemas comuns da parte 1, como o cálculo inesperado de tamanhos. O professor Guanabara explica propriedades avançadas, shorthands e a solução mágica para layouts previsíveis: a propriedade **box-sizing**.
+
+### Principais tópicos explicados no vídeo
+
+- **Diferença entre padding, margin e outline**:
+  - Padding: espaço interno (dentro da borda, afeta o background).
+  - Margin: espaço externo (fora da borda, transparente).
+  - Outline: contorno externo (não ocupa espaço, fica sobreposto à margem, não afeta o layout).
+
+- **Shorthands (propriedades abreviadas)**:
+  - Para padding e margin: valores em ordem horário (top, right, bottom, left) – ex: padding: 10px 20px 30px 40px.
+  - Com 2 valores: top/bottom e left/right.
+  - Com 1 valor: igual em todos os lados.
+  - Para border: border: width style color (ex: border: 2px solid red).
+
+- **box-sizing**:
+  - **content-box** (padrão): width/height só do conteúdo → padding e border somam ao tamanho total (causa "estouros" inesperados).
+  - **border-box**: width/height incluem padding e border → o conteúdo diminui automaticamente para caber (mais intuitivo e recomendado).
+  - Dica do professor: usar * { box-sizing: border-box; } no CSS global para facilitar todos os layouts.
+
+- **Outros detalhes**:
+  - Como outline é útil para depuração (ex: outline: 1px solid red; para ver limites sem alterar tamanhos).
+  - Exemplos de como shorthands economizam código e evitam erros.
+
+### Exemplos práticos que o professor mostrou
+
+- Comparar divs com padding/margin grandes em content-box (tamanho "estoura") vs border-box (tamanho fica exato).
+
+- Aplicar outline para destacar elementos sem bagunçar o layout (útil no DevTools ou para acessibilidade).
+
+- Usar shorthands para configurar padding/margin de forma rápida em vários elementos.
+
+- Mostrar o problema real: uma div com width: 100% + padding/border cria barra de rolagem horizontal → resolvido com box-sizing: border-box.
+
+- Testar diferentes números de valores em shorthands e ver o efeito visual.
+
+- Aplicar em caixas reais, como cards ou botões, para ver como border-box torna o design mais previsível.
+
+### Conclusão do que entendi
+
+Na parte 2, o foco é tornar o Box Model prático e sem dores de cabeça. A propriedade **box-sizing: border-box** é a grande estrela: ela faz o cálculo de tamanhos ser exatamente como a gente imagina (width inclui tudo). Combinada com shorthands e o uso correto de outline (em vez de margin para depuração), o código fica mais limpo, os layouts mais controlados e evita bugs comuns. O professor recomenda sempre usar border-box em projetos reais — isso muda tudo para melhor!

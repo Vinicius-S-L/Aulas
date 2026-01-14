@@ -1,0 +1,44 @@
+### Principais diferenças entre id e class
+
+- id:
+
+   - É uma identificação **única** para um elemento na página.
+
+   - Só pode ser usado **uma única vez** em todo o documento HTML (não pode repetir o mesmo id em elementos diferentes).
+
+   - No CSS, é selecionado com o símbolo **#** (exemplo: #cabecalho { background: blue; }).
+
+   - Ideal para elementos exclusivos, como o header principal, o footer ou uma seção específica que não se repete.
+
+   - Possui prioridade maior no CSS (maior especificidade) e é muito usado também em JavaScript e links âncora.
+
+- class:
+
+   - É uma identificação para um **grupo de elementos** que compartilham o mesmo estilo.
+
+   - Pode ser usado **quantas vezes quiser** na mesma página (reutilizável).
+
+   - No CSS, é selecionado com o símbolo **.** (exemplo: .destaque { color: red; font-weight: bold; }).
+
+   - Perfeito para estilizar vários elementos semelhantes, como botões, parágrafos destacados, cards ou itens de menu.
+
+   - Um único elemento pode ter **várias classes** ao mesmo tempo (separadas por espaço), oferecendo mais flexibilidade.
+
+
+### Exemplos práticos que o professor mostrou
+
+- Usar --class-- para estilizar todos os títulos de notícias com a mesma cor, tamanho e estilo (reutilizando a mesma classe em vários <h2> ou <p>).
+
+- Aplicar uma classe chamada ".centralizado" em várias divs ou imagens que precisam do mesmo alinhamento.
+
+- Usar **id** para estilizar apenas um elemento único, como o logo principal da página (#logo) ou o rodapé principal (#rodape).
+
+- Demonstrar como aplicar múltiplas classes em um mesmo elemento, por exemplo:
+
+  <p class="destaque centralizado negrito">Texto importante</p>
+
+- Mostrar o erro comum de repetir o mesmo id em elementos diferentes e como o navegador pode interpretar apenas o primeiro, causando problemas de estilo.
+
+### Conclusão do que entendi
+
+A principal diferença é que o **id** funciona como um CPF (único para cada pessoa), enquanto a **class** é como uma categoria ou grupo (várias pessoas podem pertencer ao mesmo grupo). Usar corretamente id e class deixa o código HTML e CSS mais organizado, reutilizável e fácil de manter, evitando repetições desnecessárias e conflitos de estilo.

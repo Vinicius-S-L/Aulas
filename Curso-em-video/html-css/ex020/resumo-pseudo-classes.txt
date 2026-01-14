@@ -1,0 +1,71 @@
+### O que são pseudo-classes em CSS
+
+Pseudo-classes são seletores especiais no CSS que permitem estilizar elementos com base em **estados** (como quando o mouse passa por cima) ou **posições** na estrutura da página, sem precisar adicionar classes ou ids extras no HTML. Elas são escritas com dois pontos `:` depois do seletor (exemplo: a:hover).
+
+Elas tornam a página mais interativa e dinâmica, melhorando a experiência do usuário.
+
+
+
+### Principais pseudo-classes explicadas no vídeo
+
+-- :hover:
+  - Aplica estilo quando o mouse está sobre o elemento (passa por cima).
+
+  - Muito usada para mudar cor de links, botões ou menus ao passar o mouse.
+
+  - Exemplo clássico: mudar a cor ou sublinhado de um link.
+
+
+
+-- :active:
+
+  - Aplica estilo no momento em que o elemento está sendo clicado (enquanto o botão do mouse está pressionado).
+
+  - Útil para dar feedback visual de que o clique foi registrado.
+
+
+
+-- :focus:
+
+  - Aplica estilo quando o elemento recebe foco (geralmente por teclado, como ao usar Tab ou clicar em campos de formulário).
+
+  - Importante para acessibilidade, ajudando usuários que navegam sem mouse.
+
+
+
+-- :link** e **:visited:
+
+  - :link: Estiliza links que ainda não foram visitados.
+
+  - :visited: Estiliza links já visitados pelo usuário.
+
+  - Ordem importante: declarar :link antes de :visited.
+
+
+
+-- Pseudo-classes estruturais (como filhos):
+
+  - :first-child: Seleciona o primeiro filho de um elemento pai.
+
+  - :last-child: Seleciona o último filho.
+
+  - :nth-child(n): Seleciona o enésimo filho (ex: :nth-child(2) para o segundo, ou :nth-child(odd/even) para ímpares/pares).
+
+
+
+### Exemplos práticos que o professor mostrou
+
+- Aplicar **:hover** em links para mudar a cor, adicionar sublinhado ou aumentar o tamanho ao passar o mouse.
+- Usar **:hover** em botões ou divs para criar efeitos de "levantar" (com sombra ou escala).
+- Combinar em menus: ao passar o mouse em um item de lista (<li>), mostrar um submenu escondido (usando :hover em ul ou li).
+- Estilizar campos de formulário com **:focus** para mudar a borda ou fundo quando o usuário clica no input.
+- Usar **:active** para mudar a cor do botão enquanto é clicado.
+- Exemplos com links: definir cores diferentes para :link (azul), :visited (roxo), :hover (vermelho) e :active (amarelo) – seguindo a ordem LoVe/HAtE (Link, Visited, Hover, Active).
+- Aplicar :first-child e :last-child para estilizar o primeiro e último parágrafo ou item de lista de forma diferente (ex: arredondar cantos apenas nos extremos).
+- Usar :nth-child(odd) e :nth-child(even) para criar efeito zebrado em tabelas (linhas alternadas com cores diferentes).
+
+
+
+### Conclusão do que entendi
+
+Pseudo-classes permitem criar interações e estilos avançados sem JavaScript, apenas com CSS puro. Elas são essenciais para deixar o site mais responsivo ao usuário (como efeitos de hover e focus) e para estilizar elementos baseados na posição (como filhos). O professor enfatiza a importância da ordem correta nos links e de pensar na acessibilidade com :focus. Usando pseudo-classes corretamente, o código fica mais limpo, interativo e profissional!

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(117, 165, 117, 0.649);
+}
+
+h1 {
+    font: italic 800 2em sans-serif;
+    color: green;
+}
+h1#principal {
+    background-color: green;
+    color: aliceblue;
+}
+
+h3 {
+    font: italic 600 1.5em Arial;
+    color: greenyellow
+}

@@ -1,0 +1,49 @@
+### O que é o Modelo de Caixas (Box Model) no CSS
+
+O Modelo de Caixas é o conceito fundamental de como os elementos HTML são renderizados na página: todo elemento é tratado como uma **caixa retangular** composta por camadas. Ele define como o espaço é ocupado por largura, altura, padding, border e margin.
+
+Essa aula (parte 1) coloca o box model na prática, mostrando como calcular o tamanho real dos elementos e usando as ferramentas do navegador para visualizar e depurar.
+
+### Principais componentes do Box Model explicados no vídeo
+
+- **Content (conteúdo)**:
+  - A área interna onde fica o texto, imagem ou outro conteúdo.
+  - Definida por width (largura) e height (altura).
+
+- **Padding (preenchimento interno)**:
+  - Espaço entre o conteúdo e a borda.
+  - Aumenta o tamanho total da caixa, mas o fundo (background) cobre o padding.
+  - Pode ser definido individualmente (top, right, bottom, left) ou abreviado.
+
+- **Border (borda)**:
+  - Linha ao redor do padding.
+  - Tem espessura, estilo (solid, dashed, etc.) e cor.
+  - Também aumenta o tamanho total da caixa e é coberta pelo background.
+
+- **Margin (margem externa)**:
+  - Espaço fora da borda, entre a caixa e os elementos vizinhos.
+  - Não afeta o background (é transparente).
+  - Pode causar colapso de margens verticais entre elementos irmãos.
+
+- **Cálculo do tamanho total**:
+  - Largura real = width + padding-left + padding-right + border-left + border-right
+  - Altura real = height + padding-top + padding-bottom + border-top + border-bottom
+  - Margins não entram no tamanho da caixa, mas afetam o posicionamento.
+
+### Exemplos práticos que o professor mostrou
+
+- Criar uma div simples e aplicar width, height, padding, border e margin para ver como o tamanho muda inesperadamente (muita gente esquece que padding e border somam ao width).
+
+- Usar o **DevTools do navegador** (inspecionar elemento) para visualizar as caixas coloridas: conteúdo (azul), padding (verde), border (amarelo) e margin (laranja).
+
+- Mostrar o problema comum: definir width: 100% + padding ou border faz a caixa "estourar" e criar barra de rolagem horizontal.
+
+- Aplicar bordas arredondadas (border-radius) e sombras (box-shadow) em caixas para efeitos visuais.
+
+- Exemplos com blocos inline vs block: como divs são block (ocupam linha inteira + margins) e spans são inline (não aceitam width/height facilmente).
+
+- Testar colapso de margins: duas divs com margin-bottom e margin-top, mostrando que o espaço entre elas é o maior dos dois, não a soma.
+
+### Conclusão do que entendi
+
+O Box Model é a base de todo layout em CSS — entender como content, padding, border e margin interagem evita muitos bugs de alinhamento e tamanho. Na prática, o professor Guanabara enfatiza usar o DevTools para "ver" as caixas e calcular tamanhos corretamente. Dominar isso deixa os sites mais previsíveis, bonitos e profissionais. Na parte 2 provavelmente entra box-sizing para resolver problemas comuns!

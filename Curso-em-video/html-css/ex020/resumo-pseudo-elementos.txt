@@ -1,0 +1,44 @@
+### O que são pseudo-elementos em CSS
+
+Pseudo-elementos são seletores especiais no CSS que permitem estilizar **partes específicas** de um elemento ou **adicionar conteúdo virtual** (antes ou depois do conteúdo real), sem precisar modificar o HTML. Eles são escritos com dois pontos duplos `::` (exemplo: p::first-letter).
+
+Diferente das pseudo-classes (que dependem de estados como :hover), os pseudo-elementos focam em porções do elemento, como a primeira letra ou linha, ou inserem conteúdo com ::before e ::after.
+
+### Principais pseudo-elementos explicados no vídeo
+
+- **::before**:
+  - Insere conteúdo virtual **antes** do conteúdo real do elemento.
+  - Obrigatório usar a propriedade `content: "";` (pode ser texto, ícones ou vazio para decoração).
+  - Muito usado para adicionar ícones, decoração ou elementos gráficos.
+
+- **::after**:
+  - Insere conteúdo virtual **depois** do conteúdo real do elemento.
+  - Também requer `content: "";`.
+  - Ideal para adicionar elementos como setas, linhas ou esclarecimentos no final.
+
+- **::first-letter**:
+  - Estiliza apenas a **primeira letra** de um bloco de texto (geralmente em parágrafos ou títulos).
+  - Útil para criar efeitos de letra capitular (drop cap) maior ou com estilo diferente.
+
+- **::first-line**:
+  - Estiliza apenas a **primeira linha** de um bloco de texto.
+  - O tamanho da linha varia conforme a largura da tela (responsivo).
+
+- Outros mencionados:
+  - Diferença entre : (um ponto) e :: (dois pontos): A sintaxe com :: é a recomendada moderna para pseudo-elementos, mas : ainda funciona por compatibilidade.
+
+### Exemplos práticos que o professor mostrou
+
+- Usar **::before** para adicionar um ícone (como uma seta ou símbolo) antes de um título ou item de lista.
+
+- Aplicar **::after** para inserir uma decoração no final de uma seção, como uma linha ou texto "Fim".
+
+- Criar efeito de aspas em citações: usar ::before para abrir aspas e ::after para fechar.
+
+- Estilizar **::first-letter** em parágrafos para deixar a inicial maior, em outra cor ou com fonte diferente (efeito clássico de livros).
+
+- Aplicar **::first-line** para deixar a primeira linha em negrito ou outra cor, destacando a introdução de textos.
+
+- Combinar com `content` vazio para criar elementos puramente decorativos, como barras laterais ou caixas com sombra.
+
+- Mostrar como limpar floats ou criar layouts simples só com pseudo-elementos (ex: técnica clearfix com ::after).

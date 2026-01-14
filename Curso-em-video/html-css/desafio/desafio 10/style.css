@@ -1,0 +1,105 @@
+body {
+  margin: 0px;
+  background-color: rgb(160, 241, 160);
+}
+
+header {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(129, 254, 129),
+    rgb(36, 69, 7)
+  );
+  margin: 0px;
+  padding: 15px;
+  height: 170px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.327);
+}
+header > .titulo {
+  margin: 10px;
+  text-align: center;
+  color: white;
+  font: italic 700 2em "Courier New", Courier, monospace;
+}
+#subtitulo {
+  color: lightgray;
+  text-align: center;
+  margin: 35px;
+}
+nav > a {
+  color: white;
+  margin: 0px 15px;
+  text-decoration: none;
+  font: italic 800 1em sans-serif;
+}
+
+main {
+  background-color: white;
+  width: 55%;
+  margin: auto;
+  padding: 20px 10px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.327);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.titulo {
+  margin: 00px;
+  color: green;
+  font: italic 700 2em sans-serif;
+}
+.subtitulo {
+  margin: 00px;
+  color: green;
+  font: italic 700 2em sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgba(144, 238, 144, 0.577),
+    white
+  );
+}
+
+:is(article, main) > p {
+  text-indent: 5%;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+video {
+  background-color: green;
+}
+h3 {
+  background-color: rgb(36, 69, 7);
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+  margin: 0px;
+  padding: 8px 0px 10px 10px;
+}
+#extra {
+  background-color: rgb(160, 241, 160);
+  border-radius: 10px;
+  padding: 0px 0px 5px 0px;
+  margin: 5px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.327);
+}
+#extra > p {
+  margin: 10px 10px;
+}
+.lista {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: rgb(22, 41, 5);
+  font: italic 600 1em sans-serif;
+}
+
+footer {
+    background-color: rgb(22, 41, 5);
+    padding: 10px;
+}
+footer > p {
+    color: white;
+    margin: 0px;
+    text-align: center;
+}
