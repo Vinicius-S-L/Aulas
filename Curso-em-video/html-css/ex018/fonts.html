@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontes Externas</title>
+
+    <style>
+      /*
+            Tipos de format()
+
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+        */
+
+      @font-face {
+        font-family: "caligrafia";
+        src: url(faith.otf) format("opentype");
+      }
+      @font-face {
+        font-family: "hero";
+        src: url(Urban\ Heroes.ttf) format("truetype");
+      }
+      @font-face {
+        font-family: "love";
+        src: url(Lovely\ Valentine\ Script.ttf) format("truetype");
+      }
+      .caligrafia {
+        font-family: "caligrafia";
+        font-size: larger;
+        font-weight: 700;
+      }
+      .hero {
+        font-family: "hero";
+        text-transform: uppercase;
+      }
+      .love {
+        font-family: "love";
+        font-style: italic;
+        font-weight: 200;
+        font-size: large;
+        text-transform: capitalize;
+      }
+
+      h1 {
+        font-family: "caligrafia", Helvetica, sans-serif;
+        font-size: 3em;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Titulo</h1>
+
+    <p class="caligrafia">
+      O Modelo de Caixas é o conceito fundamental de como os elementos HTML são
+      renderizados na página: todo elemento é tratado como uma **caixa
+      retangular** composta por camadas. Ele define como o espaço é ocupado por
+      largura, altura, padding, border e margin.
+    </p>
+
+    <p class="hero">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+      deleniti magnam perspiciatis? Omnis labore delectus eum sequi, temporibus,
+      atque quisquam illum, assumenda inventore eos quaerat? Corporis amet
+      cumque officiis tenetur. Lorem ipsum dolor sit amet consectetur,
+      adipisicing elit. A consectetur explicabo minima praesentium nulla dolor
+      sapiente molestiae quam sint tenetur libero vitae, fugit tempora quos
+      nobis non? Rerum, delectus commodi.
+    </p>
+
+    <p class="love">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, labore
+      quibusdam at magnam, optio debitis magni nihil accusamus qui, commodi
+      mollitia eveniet alias aspernatur accusantium voluptatibus. Fugiat illum
+      molestias et?
+    </p>
+  </body>
+</html>

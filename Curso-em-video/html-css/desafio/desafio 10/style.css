@@ -1,14 +1,28 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: android;
+  src: url(fontes/idroid.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --coreFundo: #68f268a2;
+  --core1_Nav_Degrade: #81fe81;
+  --core2_Nav_Degrade: #334833;
+  --core_Subtitulo_Degrade: #98ff988c;
+  --fonte-padrao: Arial, Helvetica, sans-serif;
+  --fonte-destaque: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 body {
   margin: 0px;
-  background-color: rgb(160, 241, 160);
+  background-color: #68f268a2;
 }
 
 header {
-  background-image: linear-gradient(
-    to bottom,
-    rgb(129, 254, 129),
-    rgb(36, 69, 7)
-  );
+  background-image: linear-gradient(to bottom, #81fe81, #334833);
   margin: 0px;
   padding: 15px;
   height: 170px;
@@ -18,7 +32,7 @@ header > .titulo {
   margin: 10px;
   text-align: center;
   color: white;
-  font: italic 700 2em "Courier New", Courier, monospace;
+  font: italic 700 2em "android", Courier, monospace;
 }
 #subtitulo {
   color: lightgray;
@@ -29,7 +43,7 @@ nav > a {
   color: white;
   margin: 0px 15px;
   text-decoration: none;
-  font: italic 800 1em sans-serif;
+  font: italic 800 1em Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -40,21 +54,20 @@ main {
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.327);
   border-radius: 0px 0px 10px 10px;
 }
+p {
+  font: italic 100 1em var(--fonte-padrao);
+}
 
 .titulo {
   margin: 00px;
-  color: green;
-  font: italic 700 2em sans-serif;
+  color: #334833;
+  font: italic 700 1.5em "android";
 }
 .subtitulo {
   margin: 00px;
-  color: green;
+  color: #334833;
   font: italic 700 2em sans-serif;
-  background-image: linear-gradient(
-    to right,
-    rgba(144, 238, 144, 0.577),
-    white
-  );
+  background-image: linear-gradient(to right, #98ff988c, white);
 }
 
 :is(article, main) > p {
@@ -65,18 +78,24 @@ img {
   display: block;
   margin: auto;
 }
-video {
-  background-color: green;
+#video {
+  background-color: #334833;
+  margin: auto;
+  padding: 2%;
+}
+iframe {
+  display: block;
+  margin: auto;
 }
 h3 {
-  background-color: rgb(36, 69, 7);
+  background-color: #334833;
   color: white;
   border-radius: 10px 10px 0px 0px;
   margin: 0px;
   padding: 8px 0px 10px 10px;
 }
 #extra {
-  background-color: rgb(160, 241, 160);
+  background-color: #68f268a2;
   border-radius: 10px;
   padding: 0px 0px 5px 0px;
   margin: 5px;
@@ -84,22 +103,25 @@ h3 {
 }
 #extra > p {
   margin: 10px 10px;
+  font-family: var(--fonte-destaque);
+  font-style: italic;
+  font-size: small;
 }
 .lista {
   display: inline-block;
 }
 a {
   text-decoration: none;
-  color: rgb(22, 41, 5);
+  color: #334833;
   font: italic 600 1em sans-serif;
 }
 
 footer {
-    background-color: rgb(22, 41, 5);
-    padding: 10px;
+  background-color: rgb(22, 41, 5);
+  padding: 10px;
 }
 footer > p {
-    color: white;
-    margin: 0px;
-    text-align: center;
+  color: white;
+  margin: 0px;
+  text-align: center;
 }
