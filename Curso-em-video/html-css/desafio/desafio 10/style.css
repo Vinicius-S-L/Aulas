@@ -9,9 +9,9 @@
 
 :root {
   --corFundo: #68f268a2;
-  --cor1_Nav_Degrade: #81fe81;
-  --cor2_Nav_Degrade: #334833;
-  --cor_Subtitulo_Degrade: #98ff988c;
+  --cor_Nav_Degrade: #81fe81;
+  --cor-verde-contraste-principal: #334833;
+  --cor-verde-contraste-segundaria: #98ff988c;
   --cor-fundo-link: #87ff87bf;
   --fonte-padrao: Arial, Helvetica, sans-serif;
   --fonte-destaque: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  background-image: linear-gradient(to bottom, #81fe81, #334833);
+  background-image: linear-gradient(to bottom, var(--cor_Nav_Degrade), var(--cor-verde-contraste-principal));
   margin: 2px 0px;
   padding: 15px 0px;
   min-height: 150px;
@@ -57,8 +57,8 @@ nav a {
   padding: 5px;
 }
 nav > a:hover {
-  background-color: var(--cor1_Nav_Degrade);
-  color: var(--cor2_Nav_Degrade);
+  background-color: var(--cor-verde-contraste-segundaria);
+  color: var(--cor-verde-contraste-principal);
   text-decoration: none;
 }
 
@@ -85,7 +85,7 @@ h2 {
   margin: 00px;
   color: #334833;
   font: italic 700 2em sans-serif;
-  background-image: linear-gradient(to right, #98ff988c, white);
+  background-image: linear-gradient(to right, var(--cor-verde-contraste-segundaria), white);
   text-indent: 5px;
 }
 
@@ -98,7 +98,7 @@ img {
   max-width: 400px;
 }
 #video {
-  background-color: #334833;
+  background-color: var(--cor-verde-contraste-principal);
   margin: 0px -10px;
   padding: 18%;
 }
