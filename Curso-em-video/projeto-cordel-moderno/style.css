@@ -13,21 +13,30 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
 }
 
 header {
   background-color: black;
   min-height: 200px;
+  width: 100vw;
   padding: 50px;
   text-align: center;
 }
 header p {
-    color: white;
-    font: italic 100 1em var(--fonte1);
+  color: white;
+  font: italic 100 1em var(--fonte1);
 }
 h1 {
   color: white;
-  font: 700 8em var(--fonte2);
+  font: 700 15vw var(--fonte2);
+  font-variant: small-caps;
 }
 a {
   color: white;
@@ -38,15 +47,16 @@ a:hover {
   text-decoration: underline;
 }
 main p {
-  font: italic 200 3em var(--fonte3);
   line-height: 2;
   padding: 20px 10px;
 }
 
 article {
-
+  font: italic 200 3.5vw var(--fonte3);
   height: 100%;
-  padding: 55px;
+  padding: 10vh;
+  padding-left: 30px;
+  width: 100%;
 }
 article#imagem1 {
   background: black url(background001.jpg) no-repeat top / cover fixed;
@@ -61,14 +71,11 @@ article.fundo p {
   border-radius: 20px;
   color: white;
 }
-footer{
-    background-color: black;
-    text-align: center;
-    height: 20px;
-    padding: 10px;
-}
-footer p{
-    color: white;
-    font: italic normal normal var(--fonte1);
-    margin: 0px;
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  width: 100vw;  margin: 0px;
+
 }
