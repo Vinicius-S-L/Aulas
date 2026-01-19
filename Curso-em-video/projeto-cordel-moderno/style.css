@@ -35,13 +35,13 @@ header p {
 }
 h1 {
   color: white;
-  font: 700 15vw var(--fonte2);
+  font: 800 15vw var(--fonte2);
   font-variant: small-caps;
 }
 a {
   color: white;
   text-decoration: none;
-  font: italic 700 1em var(--fonte1);
+  font: italic 650 1em var(--fonte1);
 }
 a:hover {
   text-decoration: underline;
@@ -76,6 +76,7 @@ footer {
   text-align: center;
   padding: 10px;
   color: white;
-  width: 100vw;  margin: 0px;
-
+  width: 100vw;
+  margin: 0px;
+  font-size: 3vw;
 }
