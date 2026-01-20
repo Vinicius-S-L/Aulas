@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table {
+        width: 500px;
+        border-collapse: collapse;
+        position: relative;
+      }
+
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+      }
+
+      thead,
+      tfoot {
+        background-color: #383838;
+        color: white;
+      }
+
+      thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: #383838;
+      }
+
+      tbody > tr:nth-child(odd) {
+        /* 2n-1 */
+        background-color: white;
+      }
+
+      tbody > tr:nth-child(even) {
+        /* 2n */
+        background-color: lightgray;
+      }
+
+      td.num {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+      <caption>
+        População das Unidades Federativas
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 50px">População</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">45.919.049</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">21.168.791</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td class="num">17.264.943</td>
+        </tr>
+        <tr>
+          <td>Bahia</td>
+          <td class="num">14.873.064</td>
+        </tr>
+        <tr>
+          <td>Paraná</td>
+          <td class="num">11.433.957</td>
+        </tr>
+        <tr>
+          <td>Rio Grande do Sul</td>
+          <td class="num">11.377.239</td>
+        </tr>
+        <tr>
+          <td>Pernambuco</td>
+          <td class="num">9.557.071</td>
+        </tr>
+        <tr>
+          <td>Ceará</td>
+          <td class="num">9.132.078</td>
+        </tr>
+        <tr>
+          <td>Pará</td>
+          <td class="num">8.602.865</td>
+        </tr>
+        <tr>
+          <td>Santa Catarina</td>
+          <td class="num">7.164.788</td>
+        </tr>
+        <tr>
+          <td>Maranhão</td>
+          <td class="num">7.075.181</td>
+        </tr>
+        <tr>
+          <td>Goiás</td>
+          <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+          <td>Amazonas</td>
+          <td class="num">4.144.597</td>
+        </tr>
+        <tr>
+          <td>Espírito Santo</td>
+          <td class="num">4.018.650</td>
+        </tr>
+        <tr>
+          <td>Paraíba</td>
+          <td class="num">4.018.127</td>
+        </tr>
+        <tr>
+          <td>Rio Grande do Norte</td>
+          <td class="num">3.506.853</td>
+        </tr>
+        <tr>
+          <td>Mato Grosso</td>
+          <td class="num">3.484.466</td>
+        </tr>
+        <tr>
+          <td>Alagoas</td>
+          <td class="num">3.337.357</td>
+        </tr>
+        <tr>
+          <td>Piauí</td>
+          <td class="num">3.273.227</td>
+        </tr>
+        <tr>
+          <td>Distrito Federal</td>
+          <td class="num">3.015.268</td>
+        </tr>
+        <tr>
+          <td>Mato Grosso do Sul</td>
+          <td class="num">2.778.986</td>
+        </tr>
+        <tr>
+          <td>Sergipe</td>
+          <td class="num">2.298.696</td>
+        </tr>
+        <tr>
+          <td>Rondônia</td>
+          <td class="num">1.777.225</td>
+        </tr>
+        <tr>
+          <td>Tocantins</td>
+          <td class="num">1.572.866</td>
+        </tr>
+        <tr>
+          <td>Acre</td>
+          <td class="num">881.935</td>
+        </tr>
+        <tr>
+          <td>Amapá</td>
+          <td class="num">845.731</td>
+        </tr>
+        <tr>
+          <td>Roraima</td>
+          <td class="num">605.761</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Total de Habitantes</th>
+          <td class="num"><strong>210.147.125</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, repellat ex quaerat enim distinctio laborum a fuga numquam nulla eos nisi? Exercitationem, quo nisi consequatur fugit iste enim asperiores ea!</span><span>Repellat consectetur aliquam, veritatis odit sequi perferendis laborum eaque quae, alias aut nemo reiciendis unde. Sint dolores aliquam nesciunt est ratione culpa! Doloribus temporibus natus eum tempore quod sapiente impedit.</span><span>Numquam possimus, quaerat aspernatur ratione sequi distinctio corporis sint nobis ut exercitationem saepe quis perspiciatis dolores amet placeat dignissimos deleniti reprehenderit corrupti alias veritatis soluta ipsam provident! Inventore, omnis debitis?</span><span>Obcaecati repellat suscipit asperiores quod necessitatibus aliquid nobis excepturi? Optio, odit dicta placeat dolor aut sequi cumque sint animi, incidunt amet dolorem distinctio qui dolores omnis corporis! Ut, necessitatibus voluptatum.</span><span>Eos tempora aperiam culpa facilis similique? Modi aut amet vel voluptas sint eum? Architecto quod repudiandae aspernatur animi eos soluta, ad unde consequatur veritatis beatae facere nihil, ab corrupti cum.</span></p>
+    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat doloribus voluptas, incidunt laborum qui aliquid delectus error expedita dolore earum modi sapiente, reiciendis reprehenderit quibusdam, cum aspernatur similique commodi ratione.</span><span>Possimus dignissimos cupiditate nostrum voluptatibus temporibus molestias tenetur saepe ea quisquam alias. Molestias, quidem. Voluptatem tempora distinctio vitae officiis debitis molestias error corrupti laborum nulla ut dolor, cumque ducimus non!</span><span>Repudiandae nisi officiis doloremque, facilis eligendi praesentium accusamus eaque, impedit molestiae nostrum aliquam quis alias et animi tempora corrupti labore sed unde porro perferendis sequi. Autem vero quibusdam praesentium explicabo?</span><span>Voluptatem facilis molestias, non mollitia, officiis veritatis modi, nesciunt corrupti alias hic accusantium. Officiis fugiat, quas consequatur minima tempore praesentium, enim dolore autem eaque ut corporis aliquam laudantium nulla inventore?</span><span>Minus, quam dolorem dolor cumque a quia minima placeat nihil nobis quidem tempore, laborum quas recusandae, earum at expedita velit? Assumenda nesciunt et ut minima saepe consequatur rem neque. Aliquid!</span></p>
+    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vero, architecto cumque animi laudantium temporibus, ab laboriosam quidem ipsam assumenda enim? Minima quasi alias, ad iste rerum adipisci. Repudiandae, quae?</span><span>Rerum, aspernatur? Nesciunt, explicabo nisi consequatur modi magni ex doloremque sequi odit amet veritatis voluptatum eius iure porro at dolorum commodi sit. Ratione quaerat quae laboriosam quo et qui nostrum.</span><span>Itaque quaerat, exercitationem sapiente repellendus harum sit eos iusto fugit iure dolorum doloremque sint numquam sequi debitis porro corrupti assumenda expedita accusamus rem nostrum? Voluptates harum eius cupiditate inventore voluptate!</span><span>Minus, voluptatum. Quidem quasi ad facere praesentium debitis aperiam officia. Maxime quas quibusdam vel, perferendis quasi aut eligendi deserunt dicta illo quidem aspernatur iste! Excepturi recusandae voluptate similique! Accusamus, quaerat?</span><span>Dignissimos alias tempora nostrum voluptates? Quibusdam eius dolorem fuga culpa corporis magni quos laboriosam, vitae autem non consequuntur quod necessitatibus nemo minima, dignissimos explicabo sed maxime, id saepe! Id, placeat!</span></p>
+  </body>
+</html>
