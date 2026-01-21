@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classe</title>
+    <style>
+        div {
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        div:hover {
+            background-color: aqua;
+            font: italic 100 2em sans-serif;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            font: italic 650 0.5em sans-serif;
+            background-color: rgba(104, 136, 234, 0.718);
+            height: auto;
+            width: auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse em baixo</p>
+    <div id="d1" >01
+        <p>texto escondido</p>
+    </div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+    
+</body>
+</html>
