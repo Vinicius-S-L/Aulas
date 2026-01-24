@@ -1,0 +1,8 @@
+    @charset "UTF-8";
+
+    /*configurações Retrato (em pé) */
+
+    body {
+        background-image: url(imagem-retrato.jpg);
+        background-position: center bottom;
+    }

@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/*configurações paisagem*/
+
+body {
+    background-image: url(imagem-paisagem.jpg);
+    background-position: left bottom;
+}

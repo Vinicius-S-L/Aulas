@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*tela*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  background-color: white;
+}
+header {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  height: 100px;
+  padding: 30px 0px 0px 15px;
+}
+h1, h2{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+header ul {
+  list-style: none;
+  text-align: left;
+  position: absolute;
+  top: 80px;
+}
+header li {
+  display: inline-block;
+  font: italic 600 1em Arial, Helvetica, sans-serif;
+  padding: 5px;
+  margin: 10px 10px;
+  background: rgba(211, 211, 211, 0.341);
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+header li:hover{
+    background-image: radial-gradient(to right, black, gray);
+    color: white;
+}
+main{
+    padding: 15px;
+    background-color: rgb(96, 96, 96);
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+article{
+    background-color: lightgray;
+    border-radius: 5px;
+}
+article p{
+    padding: 10px;
+    line-height: 2;
+    margin: 10px;
+}

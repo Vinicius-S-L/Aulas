@@ -1,0 +1,39 @@
+      @charset "UTF-8";
+
+      /*configurações Gerais*/
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+      }
+      h1 {
+        color: white;
+        text-shadow: 2px 2px 6px #223aeb;
+      }
+
+      /*configurações Retrato (em pé) */
+      @media screen and (orientation: portrait) {
+        body {
+          background-image: url(imagem-retrato.jpg);
+          background-position: center left;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+      @media screen and (orientation: landscape) {
+        /*configurações paisagem*/
+
+        body {
+          background-image: url(imagem-paisagem.jpg);
+          background-position: left bottom;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
