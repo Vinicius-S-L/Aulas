@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* Todas as outras Versões*/
+
+/* typical Device Breakpoints
+
+- Dispositivos Extra Pequenos (phones, 600px pra baixo)
+
+- Pequenos Dispositivos (portrait tablets e large phones, 600px pra cima)
+
+- Dispositivos Medios (landscape tablets, 768px pra cima)
+
+- Grande dispositivos (laptops/desktops, 992px pra cima)
+
+- Dispositivos extra grande (grande laptops e desktops, 1200px pra cima)
+
+*/
+
+@media print {
+  body {
+    font-family: "Courier New", Courier, monospace;
+  }
+  main {
+    border: 2px solid black;
+  }
+  main h1 {
+    text-shadow: none;
+    color: black;
+  }
+  img#phone {
+    display: none;
+  }
+  img#print {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) /* Tablet*/ {
+  body {
+    background: url(../imagens/imagens/back-tablet.jpg) no-repeat center
+      center / cover;
+  }
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) /* PC */ {
+  body {
+    background: url(../imagens/imagens/back-pc.jpg) no-repeat center center /
+      cover;
+  }
+  img#phone {
+    display: none;
+  }
+
+  img#tablet {
+    display: none;
+  }
+  img#pc {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) /*TV */ {
+  body {
+    background: url(../imagens/imagens/back-tv.jpg) no-repeat center center /
+      cover;
+  }
+  img#phone {
+    display: none;
+  }
+  img#pc {
+    display: none;
+  }
+  img#tv {
+    display: block;
+  }
+}

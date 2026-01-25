@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all" />
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+    />
+  </head>
+  <body onresize="mudouTamanho()">
+    <header>
+      <h1>Meu Site Responsivel</h1>
+      <span id="tracos" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
+      <menu id="opcoes">
+        <ul>
+          <li><a href="#">Opção 1</a></li>
+          <li><a href="#">Opção 2</a></li>
+          <li><a href="#">Opção 3</a></li>
+          <li><a href="#">Opção 4</a></li>
+        </ul>
+      </menu>
+    </header>
+    <main>
+      <article>
+        <h2>Texto da Media Query</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ipsa
+          inventore minima, deleniti earum nemo rerum alias quis fuga molestiae
+          distinctio, autem, porro sint. Dolorum itaque asperiores dolor maxime
+          architecto. Autem nulla cumque vero. Deleniti voluptatum autem enim
+          aspernatur eveniet error repellat excepturi nulla unde aliquam,
+          exercitationem saepe possimus quibusdam neque voluptate expedita vel?
+          Voluptates quisquam perferendis possimus temporibus recusandae?
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+          aut incidunt magnam, quo asperiores accusantium itaque dolorem quasi
+          eius ducimus non. Adipisci necessitatibus neque totam minima. Quod,
+          ullam autem! Doloribus. Corrupti fugit voluptas natus, voluptate
+          beatae cumque blanditiis veniam placeat nemo, repudiandae harum
+          reiciendis modi omnis cum eius perspiciatis rem ipsa, labore
+          consequuntur repellat minima quia! Laboriosam incidunt ea natus?
+        </p>
+      </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (opcoes.style.display == 'none') {
+                opcoes.style.display = 'block'
+            }
+            else {
+                opcoes.style.display = 'none'
+            }
+            
+        }
+        function mudouTamanho() {
+            if (window.innerWidth >= 768){
+                opcoes.style.display = 'block'
+            }
+            else{
+                opcoes.style.display = 'none'
+            }
+        }
+    </script>
+  </body>
+</html>

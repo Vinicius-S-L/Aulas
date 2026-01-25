@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 768px) {
+    span#tracos {
+        display: none;
+    }
+    menu#opcoes {
+        display: block;
+    }
+    header li{
+        display: inline-block;
+        padding: 15px 0px 10px 15px;
+    }
+    header a{
+        border-radius: 15px;
+    
+    }
+    main {
+        width: 768px;
+    }
+}
