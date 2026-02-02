@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      :root {
+        --cor-azul-claro-principal: #0644bf;
+        --cor-azul-escuro-segundario: #054159;
+        --cor-amarelo-terceiro: #f2c335;
+        --cor-vermelho-pequenos-detalhes: #d91818;
+        --cor-branco-fundo: #f2f2f2;
+      }
+      header {
+        display: block;
+        text-align: center;
+        height: 150px;
+        background-image: linear-gradient(to top, #0644bf, #054159);
+        padding: 30px 0px;
+      }
+      header h1 {
+        font:
+          700 2.5em "Courier New",
+          Courier,
+          monospace;
+      }
+      header ol {
+        display: flex;
+        background-color: var(--cor-branco-fundo);
+        margin-top: 56px;
+        padding: 5px;
+        justify-content: space-around;
+        list-style: none;
+      }
+      header ol > li a {
+        text-decoration: none;
+        color: black;
+        font: italic 600 1em arial;
+        cursor: pointer;
+      }
+      li.link a:hover {
+        background-color: var(--cor-azul-claro-principal);
+        color: var(--cor-branco-fundo);
+        transition-duration: 1s;
+        border-radius: 8px;
+
+        padding: 3px;
+      }
+      main {
+        display: flex;
+        background-color: var(--cor-branco-fundo);
+        justify-content: center;
+      }
+      main > section {
+        background-color: rgba(128, 128, 128, 0.419);
+        width: 360px;
+        margin: 20px 0px;
+        padding: 15px 20px;
+      }
+      section article {
+        margin: 20px;
+      }
+      p {
+        font-style: italic;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Noticias</h1>
+      <nav>
+        <ol class="lista-link">
+          <li class="link"><a href="#">Esporte</a></li>
+          <li class="link"><a href="#">Economia</a></li>
+          <li class="link"><a href="#">política</a></li>
+        </ol>
+      </nav>
+    </header>
+    <main class="principal">
+      <section class="noticia">
+        <article class="artigo">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+            ratione accusamus expedita animi perspiciatis blanditiis debitis
+            numquam impedit iste fugit quibusdam maxime dolorum dolorem eum, in
+            fugiat nesciunt soluta. Deleniti? Fuga pariatur labore, doloribus
+            vel amet iste ipsam reprehenderit hic tempora beatae! Dicta fuga
+            laboriosam incidunt. Incidunt doloremque nostrum doloribus
+            reiciendis accusantium consequatur, tenetur, natus numquam excepturi
+            iusto, quis dolore! Facilis consequuntur, incidunt nobis dolor
+            aperiam labore quasi reiciendis magni, ex necessitatibus optio nulla
+            non sint possimus repudiandae dolorum quibusdam tenetur quas maxime
+            voluptates quam? In, sapiente fugit! Eum, perferendis?
+          </p>
+        </article>
+        <article class="artigo">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+            ratione accusamus expedita animi perspiciatis blanditiis debitis
+            numquam impedit iste fugit quibusdam maxime dolorum dolorem eum, in
+            fugiat nesciunt soluta. Deleniti? Fuga pariatur labore, doloribus
+            vel amet iste ipsam reprehenderit hic tempora beatae! Dicta fuga
+            laboriosam incidunt. Incidunt doloremque nostrum doloribus
+            reiciendis accusantium consequatur, tenetur, natus numquam excepturi
+            iusto, quis dolore! Facilis consequuntur, incidunt nobis dolor
+            aperiam labore quasi reiciendis magni, ex necessitatibus optio nulla
+            non sint possimus repudiandae dolorum quibusdam tenetur quas maxime
+            voluptates quam? In, sapiente fugit! Eum, perferendis?
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
