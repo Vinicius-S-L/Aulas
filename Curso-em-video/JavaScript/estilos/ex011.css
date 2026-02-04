@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*mobile-first*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background-color: rgb(84, 114, 248);
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+header h1 {
+  color: wheat;
+  font:
+    italic 700 2em "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+}
+section {
+  background-color: whitesmoke;
+  width: 280px;
+  height: 300px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.636);
+  transition:
+    height 0.4s,
+    width 0.3s;
+  transition-timing-function: ease;
+  background-image: linear-gradient();
+}
+section div#horas {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+section div#paisagem {
+  width: 200px;
+  height: 200px;
+  background: white  no-repeat center
+    center / cover;
+  border-radius: 50px;
+}

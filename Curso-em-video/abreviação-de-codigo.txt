@@ -1,0 +1,85 @@
+═══════════════════════════════════════════════════════════════════════════════
+EMMET - ABREVIAÇÕES DE CÓDIGO
+═══════════════════════════════════════════════════════════════════════════════
+
+┌───────────────────────────────────────────────────────────────────────────────
+│ 1. OPERADORES DE ESTRUTURA (HTML)
+└───────────────────────────────────────────────────────────────────────────────
+Estes são os "motores" para construir a árvore do documento:
+
+  • Filho (>): Aninha um elemento dentro de outro
+    → Exemplo: ul>li
+
+  • Irmão (+): Coloca elementos no mesmo nível
+    → Exemplo: div+p
+
+  • Subir Nível (^): Sai de um aninhamento para o nível anterior
+    → Exemplo: div>p^span
+
+  • Multiplicação (*): Repete o elemento
+    → Exemplo: li*5
+
+  • Agrupamento (()): Cria subestruturas complexas
+    → Exemplo: div>(header>nav)+footer
+
+┌───────────────────────────────────────────────────────────────────────────────
+│ 2. ATRIBUTOS E CONTEÚDO
+└───────────────────────────────────────────────────────────────────────────────
+Personalize as tags com classes, IDs e textos:
+
+  • ID (#): Adiciona atributo de ID
+    → Sintaxe: div#cabecalho
+    → Resultado: <div id="cabecalho">
+
+  • Classe (.): Adiciona atributo de classe
+    → Sintaxe: div.item
+    → Resultado: <div class="item">
+
+  • Atributo Customizado ([]): Define atributos personalizados
+    → Sintaxe: img[src="foto.jpg"]
+
+  • Numeração ($): Usado com multiplicação para sequências
+    → Sintaxe: item$*3
+    → Resultado: item1, item2, item3
+
+  • Texto ({}): Adiciona conteúdo de texto
+    → Sintaxe: p{Olá Mundo}
+    → Resultado: <p>Olá Mundo</p>
+
+┌───────────────────────────────────────────────────────────────────────────────
+│ 3. ABREVIAÇÕES DE CSS
+└───────────────────────────────────────────────────────────────────────────────
+O Emmet para CSS foca em abreviar propriedades e valores:
+
+  • Posicionamento:
+    → pos:a = position: absolute
+    → pos:r = position: relative
+    → d:f = display: flex
+
+  • Margem e Padding:
+    → m10 = margin: 10px
+    → p20 = padding: 20px
+    → mt10 = margin-top: 10px
+
+  • Dimensões:
+    → w100 = width: 100px
+    → h50p = height: 50%
+
+  • Cores:
+    → c#f = color: #fff
+    → bg#0 = background: #000
+
+  • Texto:
+    → tac = text-align: center
+    → fz20 = font-size: 20px
+    → lh1.5 = line-height: 1.5
+
+┌───────────────────────────────────────────────────────────────────────────────
+│ 4. BOILERPLATE (ESTRUTURA INICIAL)
+└───────────────────────────────────────────────────────────────────────────────
+
+  • ! ou html:5: Gera a estrutura básica completa de um documento HTML5
+
+═══════════════════════════════════════════════════════════════════════════════ 
+
+Para uma consulta exaustiva de cada propriedade CSS ou tag HTML suportada, você pode acessar o Cheat Sheet oficial do Emmet. https://www.google.com/search?client=opera-gx&q=todos+os+comandos+do+emmet+abrevia%C3%A7%C3%A3o&sourceid=opera&ie=UTF-8&oe=UTF-8&udm=50&fbs=ADc_l-acAb_3MMOAUx0zmbUpgBqRiigBgL2I_pgQa-94zvB054Dys3s2x_Qm_GJcU2DlSXgtwykOhjc8tZDD70ApjQy2d8G2UxiTb9Ys8-r8BdMeRPC5lQqWwz_I3eSKibdCog6uVUCQSofCk_lFngQJyA31LIY4NEDdHhu021gcVZRNeyc_s176icETNsiAPpP6B0qtTrZYAMhn3q5RC_cpPafY072NGQ&ved=2ahUKEwijwfOIvcCSAxWjILkGHY7ADQYQ0NsOegQIAxAB&aep=10&ntc=1&mtid=zJGDacbICcPZ5OUP5JOJuAk&mstk=AUtExfA89mhp-Q5GsuBS98UMwrpWslCHVjdIg-xirtmP4aVr74wKSxACFYDBemSZWXv94cQEoYXg33gBUZwa0zykYLWBbTovsy2SqgftIv9JfDL_zZqMRiAeZkwE5zbExm9-RAsl7QorLRFPNHmcQ1ZWImX0JSsp5j2vCDTm5oAOZgpdEGc5cy-9OKkyfeMBQXMSDIYALdAD4fbt-UIMtF_vJIvtpkadHARQq7Rx2XaQur_sJcD5ZLlgDum_bwpObggMKzV6Oo5Ytq52ARch4h_jgZudVbxij5qS_SBTM2-VH8xXGgXOGIUU5wLVXs-GVMVBLq7gv4CrE8zEaQ&csuir=1#:~:text=Para%20uma%20consulta%20exaustiva%20de%20cada%20propriedade%20CSS%20ou%20tag%20HTML%20suportada%2C%20voc%C3%AA%20pode%20acessar%20o%20Cheat%20Sheet%20oficial%20do%20Emmet.

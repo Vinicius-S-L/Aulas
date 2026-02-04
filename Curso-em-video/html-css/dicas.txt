@@ -1,0 +1,7 @@
+2. Altura Dinâmica no Mobile-First
+
+ No mobile, telas pequenas costumam ter menus e barras de navegação do próprio navegador (como no Safari ou Chrome) que aparecem e somem, o que pode "quebrar" o 100vh.
+
+- Para o container principal (Mobile): Use min-height: 100dvh; (Dynamic Viewport Height). Isso garante que o container sempre cubra a tela, mesmo quando as barras do navegador mudarem de tamanho.
+
+- Para sub-containers: Mantenha a porcentagem (ex: height: 80%;) para que eles respeitem o espaço definido pelo pai, exatamente como você observou. 

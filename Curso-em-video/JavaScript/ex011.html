@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/ex011.css" />
+    <title>Tempo</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="dia">Hora do Dia</h1>
+    </header>
+
+    <section>
+      <div id="messagem">Messagem..</div>
+
+      <div id="paisagem"></div>
+    </section>
+    <script>
+      var periodo = document.getElementById("dia");
+      var messagem = window.document.getElementById("messagem");
+      var paisagem = window.document.getElementById("paisagem");
+      var date = new Date();
+      var hora = date.getHours();
+      if (hora >= 0 && hora < 12) {
+        // Bom dia
+        paisagem.style.backgroundImage = "url('imagens/paisagem-de-manhã.jpg')";
+        messagem.innerHTML = `Bom Dia! são ${hora} horas da manhã`;
+        document.body.style.backgroundColor = "#73433F"
+      } else if (hora >= 12 && hora < 18) {
+        // Boa tarde
+        paisagem.style.backgroundImage = "url('imagens/paisagem-dia.jpg')";
+        document.body.style.background = "#708C46";
+        messagem.innerHTML = `Boa Tarde! são ${hora} horas da tarde`;
+        periodo.style.color = "#0367A6"
+      } else {
+        // Boa noite
+        paisagem.style.backgroundImage = "url('imagens/paisagem-noite.jpg')";
+        document.body.style.background = "#271959";
+        messagem.innerHTML = `Boa Noite! são ${hora} horas da noite`;
+
+      }
+    </script>
+  </body>
+</html>

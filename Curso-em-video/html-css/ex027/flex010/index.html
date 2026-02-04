@@ -7,23 +7,23 @@
     <style>
         div.conteiner{
             display: flex;
-
             background-color: yellow;
-            flex-direction: row;
-            flex-wrap: wrap-reverse;
         }
         div.item{
             background-color: aquamarine;
             border: 1px solid black;
             text-align: center;
-            padding: 10px;
+            flex-grow: 3;
+        }
+        div#letra-b{
+            flex-grow: 1;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
         <div class="item">A</div>
-        <div class="item">B</div>
+        <div class="item" id="letra-b">B</div>
         <div class="item">C</div>
         <div class="item">D</div>
         <div class="item">E</div>

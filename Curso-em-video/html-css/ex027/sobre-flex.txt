@@ -1,0 +1,20 @@
+
+
+"flex: 0 1 auto" é o padrão do sistema
+
+"flex: initial" é igual "flex: 0 1 auto"
+------------------------------------------
+
+"flex: 0 0 auto" não pode diminui ou aumenta, só ocupar o espaço que o conteúdo precisa
+
+"flex: none" tem a mesma propriedade no "flex: 0 0 auto"
+----------------------------------------------------------
+
+"flex: 1 1 auto" é ao contrario do "flex: 0 0 auto" onde vai aumenta ou diminui à vondade, sem problema
+
+"flex: auto" é igual ao "flex: 1 1 auto"
+----------------------------------------------------------
+
+Se você colocar um unico valor em "flex: " ele vai modificar o "flex-grow: " e os outros valores vão se do padrão do sistema
+
+exemplo: "flex:
