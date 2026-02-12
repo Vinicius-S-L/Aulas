@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 10px;
+}
+
+main > section > article > h1 {
+  font-size: 1.5em;
+  text-align: justify;
+}
+p {
+  text-indent: 10px;
+}
+main section {
+  padding: 20px;
+  background-color: wheat;
+  border-radius: 10px;
+  margin: 20px;
+}
+main section.flex-content {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgb(149, 149, 149);
+  padding: 15px;
+}
+section article.media-text {
+  display: flex;
+  flex-flow: row wrap-reverse;
+}
+section article div.text {
+  flex: 1 1 500px;
+}
+section article div.media {
+  flex: 1 0 400px;
+  margin-top: 5px;
+}
+
+section article.text-media {
+  margin: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+div.media iframe {
+  display: block;
+  margin: auto;
+  padding: 0px;
+}
+
+div.media iframe {
+  display: block;
+  margin: auto;
+  padding: 0px;
+  
+}
