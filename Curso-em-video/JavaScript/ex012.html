@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="estilos/ex012.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Verificador de Idade</h1>
+      </header>
+
+      <main>
+        <div class="formulario">
+          <label for="id-nascimento">Ano de Nascimento: </label>
+          <input type="number" name="nascimento" id="id-nascimento" />
+        </div>
+
+        <div class="formulario">
+          <label for="id-sexo">Sexo: </label>
+          <div>
+            <input
+              type="radio"
+              name="sexo"
+              id="id-masculino"
+              value="Masculino"
+            />
+            <label for="id-masculino">Masculino</label>
+          </div>
+          <div>
+            <input type="radio" name="sexo" id="id-sexo" />
+            <label for="id-feminino">Feminino</label>
+          </div>
+        </div>
+
+        <div class="formulario">
+          <input
+            type="button"
+            onclick="verifica()"
+            value="Verificar"
+            id="verifica"
+          />
+          <p>Preenchar os dados acima para ver o resultado!</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

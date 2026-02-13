@@ -29,7 +29,7 @@ section {
   width: 280px;
   height: 300px;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: space-evenly;
   border-radius: 10px;
   align-items: center;
@@ -39,10 +39,8 @@ section {
     height 0.4s,
     width 0.3s;
   transition-timing-function: ease;
-  background-image: linear-gradient();
 }
 section div#horas {
-  color: red;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 400;
   font-style: italic;
