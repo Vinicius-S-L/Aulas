@@ -31,20 +31,61 @@
           </div>
           <div>
             <input type="radio" name="sexo" id="id-sexo" />
+            <input type="radio" name="sexo" id="id-feminino" />
             <label for="id-feminino">Feminino</label>
           </div>
         </div>
 
-        <div class="formulario">
+        <div class="formulario" >
           <input
             type="button"
             onclick="verifica()"
             value="Verificar"
             id="verifica"
           />
-          <p>Preenchar os dados acima para ver o resultado!</p>
+          <p id="resultado">Preenchar os dados acima para ver o resultado!</p>
+          <div id="imagem"></div>
         </div>
       </main>
     </div>
+    <script>
+      function verifica() {
+        var anoInput = window.document.getElementById("id-nascimento");
+        var res = window.document.getElementById("resultado");
+        var anoAtual = new Date().getFullYear();
+        const idade = anoAtual - Number(anoInput.value);
+        const imagem = window.document.getElementById("imagem");
+        const sexo = window.document.getElementsByName("sexo")
+        var genero = '';
+        imagem.className = "";
+        if (idade >= 18 && idade < 30) {
+          if (sexo[0].checked) {
+            imagem.classList.add("jovem-homem");
+          } else {
+            imagem.classList.add("jovem-mulher");
+          }
+        } else if (idade >= 30 && idade < 40) {
+          if (sexo[0].checked) {
+            imagem.classList.add("adulto-30");
+          } else {
+            imagem.classList.add("adulta-30");
+          }
+        } else if (idade >= 40 && idade <= 59) {
+          if (sexo[0].checked) {
+            imagem.classList.add("adulto-40");
+          } else {
+            imagem.classList.add("adulta-40");
+          }
+        }
+        
+        if (sexo[0].checked) {
+            genero = 'Homem';
+        } else if (sexo[1].checked) {
+            genero = 'Mulher';
+        }
+        res.style.textAlign = 'center';
+        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`;
+      }
+    </script>
   </body>
 </html>
