@@ -30,20 +30,19 @@
             <label for="id-masculino">Masculino</label>
           </div>
           <div>
-            <input type="radio" name="sexo" id="id-sexo" />
             <input type="radio" name="sexo" id="id-feminino" />
             <label for="id-feminino">Feminino</label>
           </div>
         </div>
 
-        <div class="formulario" >
+        <div class="formulario" id="resultado">
           <input
             type="button"
             onclick="verifica()"
             value="Verificar"
             id="verifica"
-          />
-          <p id="resultado">Preenchar os dados acima para ver o resultado!</p>
+          /> 
+          <p id="descricao">Preenchar os dados acima para ver o resultado!</p>
           <div id="imagem"></div>
         </div>
       </main>
@@ -51,13 +50,20 @@
     <script>
       function verifica() {
         var anoInput = window.document.getElementById("id-nascimento");
-        var res = window.document.getElementById("resultado");
+        var res = window.document.getElementById("descricao");
         var anoAtual = new Date().getFullYear();
         const idade = anoAtual - Number(anoInput.value);
         const imagem = window.document.getElementById("imagem");
         const sexo = window.document.getElementsByName("sexo")
         var genero = '';
         imagem.className = "";
+        if (idade > 12 && idade < 18) {
+          if (sexo[0].checked) {
+            imagem.classList.add("adolescente-garoto")
+          } else {
+            imagem.classList.add("adolescente-garota")
+          }
+        }
         if (idade >= 18 && idade < 30) {
           if (sexo[0].checked) {
             imagem.classList.add("jovem-homem");

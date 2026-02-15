@@ -43,7 +43,9 @@ div#resultado {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  align-self: center;
 }
+
 
 label,
 p {
@@ -59,10 +61,21 @@ input#verifica {
   margin: 20px 0;
 }
 div#imagem {
-  height:200px;
+  height: 200px;
   width: 200px;
   border-radius: 50%;
   display: none;
+  align-self: center;
+}
+#imagem.adolescente-garoto {
+  background: url(../imagens/adolescente-garoto.jpg) no-repeat center center /
+    cover;
+  display: block;
+}
+#imagem.adolescente-garota {
+  background: url(../imagens/adolescente-garota.jpg) no-repeat center center /
+    cover;
+  display: block;
 }
 #imagem.jovem-mulher {
   background: url(../imagens/jovem-mulher.jpg) no-repeat center center / cover;
