@@ -1,21 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verificando Sua Nacionalidade</title>
-</head>
-<body>
-    <h1>Verificador de Nacionalidade</h1>
-
-    <input type="pais" id="pais">
-    <input type="button" value="Verificar" onclick="pais()">
-
-
-    <script>
-        function pais() {
-            var nacionalidade = document.s 
-        }
-    </script>
-</body>
+    <style>
+      div {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Verificador de Nacionalidade</h1>
+      <select name="País" id="pais">
+        <option value="brasil">Brasil</option>
+        <option value="EUA">EUA</option>
+        <option value="China">China</option>
+      </select>
+      <input type="button" value="Verificar" onclick="pais()" />
+      <p id="pessoa"></p>
+    </div>
+    <script src="node/ex009.js"></script>
+  </body>
 </html>
